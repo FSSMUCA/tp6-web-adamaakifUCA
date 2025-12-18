@@ -1,0 +1,25 @@
+form {
+    width: 300px;
+    height: 300px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px black solid;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bts {
+    display: flex;
+    justify-content: space-between;
+}
