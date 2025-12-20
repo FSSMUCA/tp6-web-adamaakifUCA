@@ -1,25 +1,65 @@
-form {
-    width: 300px;
-    height: 300px;
-    background-color: bisque;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 3px black solid;
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+}
+
+header, footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-h1 {
-    text-align: center;
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.bts {
-    display: flex;
-    justify-content: space-between;
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+input, select {
+  padding: 8px;
+}
+
+button {
+  padding: 10px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #005ccc;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+#history li {
+  background: #eee;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
 }
